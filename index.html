@@ -9,28 +9,35 @@
     <title>
       Grocery Shop
     </title>
-    <link rel="icon" type="image/x-icon" href="./assets/ca.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
   </head>
 <body>
   <!--navigation menu  -->
   <nav>
     <div class="container">
       <div class="navbar-content">
-        <div class="logo">
-          <i class="fas fa-shopping-bag"></i>
-          <span> Grocery</span>
-        </div>
-        <div class="menu">
+          <div class="logo">
+            <a href="#home">
+              <i class="fas fa-shopping-bag"></i>
+              <span> Grocery</span>
+            </a>
+          </div>
+        </a>
+        <div class="menu" id="menu-bar">
           <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Feature">Features </a></li>
-            <li><a href="#Products">Products </a></li>
-            <li><a href="#Categories">Categories </a></li>
-            <li><a href="#Review">Review</a></li>
-            <li><a href="#Blogs">Blogs</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#feature">Features </a></li>
+            <li><a href="#products">Products </a></li>
+            <li><a href="#categories">Categories </a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#blogs">Blogs</a></li>
           </ul>
+          <div class="close-btn" id="close-btn">
+            <i class="fas fa-times"></i>
+          </div>
         </div>
         <div class="icons">
+          <i class="fas fa-bars menu-btn" id="menu-btn"></i>
           <i class="fas fa-search"></i>
           <i class="fas fa-cart-arrow-down"></i>
           <i class="fas fa-user"></i>
@@ -40,6 +47,7 @@
   </nav>
 
 
+  
   <!-- <nav class="container-fluid">
     <div class="container">
       <div class="navbar-content">

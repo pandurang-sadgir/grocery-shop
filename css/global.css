@@ -7,6 +7,13 @@
     transition: all 0.5s ease;
   }
   
+
+  a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+  }
   
   html {
     font-size: 62.5%; 
@@ -19,6 +26,9 @@
   body {
     font-size: 1.8rem;
     line-height: 1.8;
+    background-color: #eee;
+    /* position: relative; */
+    overflow-x: hidden;
   }
 
 
@@ -73,4 +83,5 @@ img {
   max-width: 132rem;
   margin: auto;
   padding: 0 0.75rem;
+  /* border: 0.1rem red solid; */
 }
