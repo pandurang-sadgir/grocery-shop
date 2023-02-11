@@ -113,6 +113,34 @@ nav {
     display: none;
 }
 
+.search-form {
+    border: 0.1rem black solid;
+    border-radius: 0.4rem;
+    padding: 0.4rem ;
+    position: absolute;
+    top: 7rem;
+    right: -50rem;
+    background-color: #fff;
+}
+
+.search-form.sf-active{
+  right: 2rem;
+}
+
+.search-form label {
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+
+#search-box{
+    border:none;
+    outline: none;
+    padding: 0.5rem 2rem;
+    font-size: 1.8rem;
+    width: 30rem;
+    background-color: transparent;
+}
+
 
 /* Media query */
 
