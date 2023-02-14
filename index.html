@@ -39,14 +39,56 @@
         <div class="icons">
           <i class="fas fa-bars menu-btn" id="menu-btn"></i>
           <i class="fas fa-search" id="search-btn"></i>
-          <i class="fas fa-cart-arrow-down"></i>
+          <i class="fas fa-cart-arrow-down" id="cart-btn"></i>
           <i class="fas fa-user"></i>
         </div>
 
-        <form  class="search-form" id="search-form">
-          <input type="search" id="search-box" placeholder="Type here to search">
-          <label  for="search-box" class="fas fa-search"></label>
-        </form>
+          <!-- serach bar -->
+          <form  class="search-form" id="search-form">
+            <input type="search" id="search-box" placeholder="Type here to search">
+            <label  for="search-box" class="fas fa-search"></label>
+          </form>
+          <!-- add to cart -->
+
+          <div class="cart" id="cart">
+            <div class="cartItem">
+              <img src="./assets/product/image-0-compressed.jpg" alt="">
+              <div>
+                <h6>Pineapple</h6>
+                <span class="price"> $4.99/-</span>
+                <span class="quantity">Qty-1</span>
+              </div>
+              <i class="fas fa-trash"></i>
+            </div>
+
+            <div class="cartItem">
+              <img src="./assets/product/image-1-compressed.jpg" alt="">
+              <div>
+                <h6>Lemon</h6>
+                <span class="price"> $4.99/-</span>
+                <span class="quantity">Qty-1</span>
+              </div>
+              <i class="fas fa-trash"></i>
+            </div>
+
+            <div class="cartItem">
+              <img src="./assets/product/image-3-compressed.jpg" alt="">
+              <div>
+                <h6>Apple</h6>
+                <span class="price"> $4.99/-</span>
+                <span class="quantity">Qty-1</span>
+              </div>
+              <i class="fas fa-trash"></i>
+            </div>
+
+            <span class="total"> Total :$19.99/-</span>
+            <div class="checkout">
+              <button type="submit">Checkout</button>
+            </div>
+
+
+          </div>
+
       </div>
     </div>
   </nav>

@@ -3,18 +3,30 @@ var bar = document.getElementById('menu-btn');
 var close = document.getElementById('close-btn');
 var searchBtn = document.getElementById('search-btn');
 var searchForm = document.getElementById('search-form');
+var search = document.getElementById('search');
+var cartBtn = document.getElementById('cart-btn');
+var cart = document.getElementById('cart');
 // visited link 
  var menu = document.querySelector('.menu').querySelectorAll('a');
 // This return array of element 'a';
-if(bar||searchBtn) {
+if(bar||searchBtn || cartBtn) {
   bar.addEventListener('click',()=>{
-    console.log('click event happnen');
     menus.classList.add('active'); 
+    searchForm.classList.remove('sf-active');
+    cart.classList.remove('cactive');
 
   });
 
   searchBtn.addEventListener('click',()=>{
-    searchForm.classList.add('sf-active');
+    searchForm.classList.toggle('sf-active');
+    cart.classList.remove('cactive');
+
+  });
+
+  cartBtn.addEventListener('click',()=>{
+    cart.classList.toggle('cactive');
+    searchForm.classList.remove('sf-active');
+
   });
 
 }
@@ -32,9 +44,9 @@ document.onclick = function (clickEvent) {
     menus.classList.remove('active');
   }
 
-  if(!searchBtn.contains(clickEvent.target)) {
-    searchForm.classList.remove('sf-active');
-  }
+  // if(!searchForm.contains(clickEvent.target)) {
+  //   searchForm.classList.remove('sf-active');
+  // }
 }
 
 
