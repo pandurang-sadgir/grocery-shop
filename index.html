@@ -40,13 +40,13 @@
           <i class="fas fa-bars menu-btn" id="menu-btn"></i>
           <i class="fas fa-search" id="search-btn"></i>
           <i class="fas fa-cart-arrow-down" id="cart-btn"></i>
-          <i class="fas fa-user"></i>
+          <i class="fas fa-user" id="login-btn"></i>
         </div>
 
           <!-- serach bar -->
-          <form  class="search-form" id="search-form">
-            <input type="search" id="search-box" placeholder="Type here to search">
-            <label  for="search-box" class="fas fa-search"></label>
+          <form  class="search-form" id="search-form" action="https://www.google.com/search" method="get">
+            <input type="search" id="search-box" placeholder="Type here to search" required>
+            <label  for="search-box" class="fas fa-search" form="search-form" type="submit"></label>
           </form>
           <!-- add to cart -->
 
@@ -85,10 +85,19 @@
             <div class="checkout">
               <button type="submit">Checkout</button>
             </div>
-
-
           </div>
 
+          <div class="login-form" id="login-form">
+            <h4>Login Now</h4>
+            <form action="#" id="login-form">
+              <input type="email" placeholder="email id" required>
+              <br>
+              <input type="password" placeholder="your password" required>
+            </form>
+            <span>Forget Your Password <a href="#"> Click Here</a></span>
+            <span>Don't  Have an Account <a href="#">Create Now</a></span>
+            <button type="submit" form="login-form"> Login Now</button>
+          </div>
       </div>
     </div>
   </nav>
