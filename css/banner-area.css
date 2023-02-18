@@ -1,0 +1,41 @@
+.banner-area {
+    height: 100vh;
+    background-image: linear-gradient(45deg ,rgba(0,0,0,0.5),rgba(0,0,0,0.2)) ,url(../assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.banner-content {
+    text-align: center;
+    color: #fff;
+    width: 50%;
+    padding: 15% 0 0 0 ;
+}
+
+.banner-content span {
+    color: rgb(165, 222, 165);
+}
+
+.banner-content button {
+    cursor: pointer;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    border: 0.1rem black solid;
+    border-radius: 0.5rem;
+    width: 15rem;
+}
+
+.banner-content button:hover {
+    background-color: #fff;
+    color: green;
+}
