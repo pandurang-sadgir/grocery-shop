@@ -73,6 +73,8 @@ menu.forEach(element=>{
   });
 })
 
-// add remove active class
 
 
+
+    // slider.js
+    

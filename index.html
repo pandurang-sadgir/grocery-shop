@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/50eae99322.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
     <title>
       Grocery Shop
     </title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
   </head>
 <body>
   <!--navigation menu  -->
@@ -27,7 +28,7 @@
           <ul>
             <li><a href="#banner-area">Home</a></li>
             <li><a href="#feature">Features </a></li>
-            <li><a href="#products">Products </a></li>
+            <li><a href="#product">Products </a></li>
             <li><a href="#categories">Categories </a></li>
             <li><a href="#review">Review</a></li>
             <li><a href="#blogs">Blogs</a></li>
@@ -52,7 +53,7 @@
 
           <div class="cart" id="cart">
             <div class="cartItem">
-              <img src="./assets/product/image-0-compressed.jpg" alt="">
+              <img src="./assets/product/pineapple.jpg" alt="">
               <div>
                 <h6>Pineapple</h6>
                 <span class="price"> $4.99/-</span>
@@ -62,7 +63,7 @@
             </div>
 
             <div class="cartItem">
-              <img src="./assets/product/image-1-compressed.jpg" alt="">
+              <img src="./assets/product/lemon.jpg" alt="">
               <div>
                 <h6>Lemon</h6>
                 <span class="price"> $4.99/-</span>
@@ -72,7 +73,7 @@
             </div>
 
             <div class="cartItem">
-              <img src="./assets/product/image-3-compressed.jpg" alt="">
+              <img src="./assets/product/apple.jpg" alt="">
               <div>
                 <h6>Apple</h6>
                 <span class="price"> $4.99/-</span>
@@ -114,7 +115,7 @@
 
   <!-- Feature section -->
 <section class="feature" id="feature">
-  <h2>Our <span>Features</span></h2>
+  <div class="title">Our <span>Features</span></div>
   <div class="feature-content container ">
     
     <div class="card">
@@ -157,11 +158,208 @@
     </div>
   </div>
 </section>
+  <!-- Feature section -->
+
+<!-- Product Section -->
+<!-- <section class="product" id="product">
+  <div class="container">
+    <div class="title">Our <span>Product</span></div>
+
+    <div class="swiper mySwiper product-content">
+      <div class="swiper-wrapper cards">
+        <div class="swiper-slide card">
+          <img src="./assets/product/orange.jpg" alt="">
+          <h5>Fresh orange</h5>
+          <span class="rate">$4.99/-- $10.99</span>
+          <span class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </span>
+             <button>Add To Cart</button>
+        </div>
+      </div>
+    </div>
+ </div> 
+</section> --> 
+<!--  Product Section -->
+<section class="product" id="product">
+  <div class="container">
+    <div class="title">Our <span>Product</span></div>
+  </div>
+  <div class="slide-container swiper container">
+    <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="./assets/product/apple.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">David Dell</h2>
+                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                    <button class="button">View More</button>
+                </div>
+            </div>
+            
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="./assets/product/cabbage.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">David Dell</h2>
+                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                    <button class="button">View More</button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="./assets/product/capcicum.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">David Dell</h2>
+                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                    <button class="button">View More</button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="./assets/product/lemon.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">David Dell</h2>
+                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                    <button class="button">View More</button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="./assets/product/onion.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">David Dell</h2>
+                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                    <button class="button">View More</button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="./assets/product/orange.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">David Dell</h2>
+                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                    <button class="button">View More</button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="./assets/product/pineapple.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">David Dell</h2>
+                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                    <button class="button">View More</button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="./assets/product/potatoes.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">David Dell</h2>
+                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                    <button class="button">View More</button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="./assets/product/spinach.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">David Dell</h2>
+                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                    <button class="button">View More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    
+</div>
+</section>
+<!--  Product Section -->
 
 
-   <!-- Use this link for an attribution  -->
+
+    <!-- Use this link for an attribution -->
    <!-- <a href="https://www.flaticon.com/free-stickers/laptop" title="laptop stickers">Laptop stickers created by bukeicon - Flaticon</a> -->
   <!-- javascript file -->
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/slider.js"></script>
   <script src="./js/script.js"></script>
+
+  <!-- Initialize Swiper -->
+  
 </body>
 </html>
