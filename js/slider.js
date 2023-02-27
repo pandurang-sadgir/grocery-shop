@@ -7,8 +7,11 @@ var swiper = new Swiper(".slide-content", {
     fade: 'true',
     grabCursor: 'true',
     pagination: {
-      el: ".swiper-pagination",
-      
+       el:".swiper-pagination",
+        dynamicBullets: true,
+        clickable: true,
+        loop: true,
+        
     },
     navigation: {
       nextEl: ".swiper-button-next",
