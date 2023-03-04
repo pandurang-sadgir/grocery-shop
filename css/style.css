@@ -594,6 +594,7 @@ nav {
     border-radius: 50%;
     background: #FFF;
     padding: 3px;
+    border: 0.1rem grey solid;
   }
   .card-image .card-img{
     height: 100%;
@@ -601,6 +602,23 @@ nav {
     border-radius: 50%;
     object-fit: cover;
   }
+
+  .card-image.user{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+  }
+
+  .card-image.user img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+
+  }
+
   .name{
     font-size: 18px;
     font-weight: 500;
@@ -726,6 +744,11 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+  }
+
+  /* review section */
+  .review .name {
+    padding: 0.5rem;
   }
 /* Media query */
 
